@@ -51,3 +51,6 @@ To ensure MedBuddy provides safe and accurate guidance, I tested the assistant a
 
 ### Personal Value Proposition
 This project highlights my expertise in **Responsible AI**, showing that I can build tools that protect users while providing value.
+
+### Documentation
+[📄 Download MedBuddy Design & Planning Doc](./Doc.docx)
