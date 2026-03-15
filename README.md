@@ -11,6 +11,7 @@ I am a Full Stack Software Engineer with over 3 years of experience delivering s
 
 ### Overview
 This artifact showcases the development of a functional AI assistant designed to help users organize health symptoms. 
+**Artifact Description:** Developed a medically-grounded AI triage assistant using Design Thinking. The project involved synthesizing a knowledge base from MedlinePlus to ensure factual accuracy and programming custom guardrails to detect high-risk medical emergencies. This artifact demonstrates the ability to balance technical AI implementation with ethical safety standards.
 
 ### Development Process
 1. **Empathize:** Identified user anxiety regarding "Google-diagnosing."
