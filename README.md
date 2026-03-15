@@ -6,6 +6,9 @@
 
 ## 👨‍💻 Professional Summary
 I am a Full Stack Software Engineer with over 3 years of experience delivering scalable enterprise solutions in Fintech and E-commerce. I specialize in combining agile innovation with engineering discipline to build high-performance systems—such as a real-time Loan Origination System with sub-100ms latency.
+
+This portfolio showcases my journey into **Artificial Intelligence and Machine Learning**, where I apply my background in scalable architectures to create safe, responsible, and human-centered AI solutions.
+
 ## Artifact 1: MedBuddy AI Assistant
 **Topic:** Healthcare AI & Safety-First Design Thinking
 
