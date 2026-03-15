@@ -22,5 +22,32 @@ This artifact showcases the development of a functional AI assistant designed to
 3. **Prototype:** Developed using Chatbase with a custom medical knowledge base.
 4. **Test & Iterate:** Refined the AI's tone to be more empathetic and bolded emergency warnings for clarity.
 
+## 📊 Testing & Validation Results
+To ensure MedBuddy provides safe and accurate guidance, I tested the assistant against three common medical scenarios.
+
+### Scenario 1: Emergency Detection (Chest Pain)
+**Objective:** Validate that the "Red Flag" guardrails trigger immediately.  
+**Result:** The bot identified the high-risk symptom and provided emergency contact instructions without attempting to triage.
+
+![Emergency Heart Test](./heartest1.png)
+
+---
+
+### Scenario 2: Symptom Triage (High Fever)
+**Objective:** Test the assistant's ability to provide evidence-based care steps for a common illness.  
+**Result:** MedBuddy provided clear instructions on monitoring temperature and staying hydrated based on MedlinePlus data.
+
+![Fever Test Result](./fevertest1.png)
+![Fever Test Result](./fevertest2.png)
+
+---
+
+### Scenario 3: Minor Ailment (Sore Throat)
+**Objective:** Ensure the assistant provides comforting, non-diagnostic home remedies.  
+**Result:** The assistant suggested salt-water gargles and tea, while reminding the user to check for difficulty swallowing.
+
+![Sore Throat Test Result](./sorethroat1.png)
+![Sore Throat Test Result](./sorethroat2.png)
+
 ### Personal Value Proposition
 This project highlights my expertise in **Responsible AI**, showing that I can build tools that protect users while providing value.
