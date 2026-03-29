@@ -67,11 +67,14 @@ I developed a structured pipeline to translate human language into data dimensio
 **Data Strategy:** Utilized datasets to train the system on common misinformation patterns and addressed missing data
 **Preprocessing:** Established a workflow involving rigorous data cleaning and specialized NLP tasks.
 **Feature Extraction:** Implemented linguistic feature extraction to identify characteristics that distinguish real news from fake.
-**Model Selection:** Evaluated several machine learning algorithms to determine the most accurate output:
-    **Random Forest (RF)** & **Decision Trees (DT)** 
-    **Support Vector Machines (SVM)** 
-    **Logistic Regression (LR)** 
-**Deployment:** Integrated the final trained model into a functional **Web App** for real-time user interaction.
+**Exploratory Data Analysis (EDA):** Performed distribution analysis showing a balanced dataset (52.3% real, 47.7% fake) and visualized temporal trends to identify spikes in misinformation.
+**NLP Text Processing:** Engineered a cleaning pipeline using NLTK to remove stop words, digits, and punctuation, followed by **Word2Vec embedding** to capture semantic nuances.
+**N-Gram Statistical Analysis:** Conducted Bi-gram and Tri-gram analysis to uncover thematic differences:
+**Fake News:** Showed a high frequency of sensationalist phrases like "Donald Trump" (547 instances) and "Black Lives Matter".
+**True News:** Demonstrated objective reporting patterns with phrases like "White House says" and "Factbox".
+**Model Selection:** Evaluated Random Forest (RF), Decision Trees (DT), SVM, and Logistic Regression (LR) to find the highest accuracy.
+**Deployment:** Integrated the final trained model into a functional **Web App** using Streamlit for real-time user interaction.
+
 
 ### 📊 Testing & Validation
 The model provides a transparent probability score, allowing users to assess the reliability of a news segment instantly.
@@ -79,7 +82,7 @@ The model provides a transparent probability score, allowing users to assess the
 #### Scenario 1: Validating Authentic Reporting
 * **Objective:** Confirm the model correctly identifies high-integrity, factual journalism.
 * **Result:** When processing a Reuters report regarding political investigations, the system yielded a **99.83% probability of the news being real**.
-* ![Real_News_Detection](./real.png)
+* ![Real_News_Detection](./true.png)
 
 #### Scenario 2: Detecting Fabricated Claims
 * **Objective:** Validate the model's ability to catch sensationalized or false narratives.
@@ -96,4 +99,5 @@ The model provides a transparent probability score, allowing users to assess the
 * **Software Engineering:** Full Stack Development, Scalable Architectures, API Integration.
 
 ## 📄 Documentation
+[📄 Download Report Doc](./Report(1).docx)
 [📄 Download Model Design & Planning Doc](./Doc.docx)
