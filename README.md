@@ -54,3 +54,46 @@ This project highlights my expertise in **Responsible AI**, showing that I can b
 
 ### Documentation
 [📄 Download MedBuddy Design & Planning Doc](./Doc.docx)
+
+## Artifact 2: Information Integrity & Predictive Modeling
+**Topic:** Machine Learning Pipelines & NLP
+
+### Overview
+In an era where digital misinformation spreads rapidly, this project addresses the critical challenge of distinguishing between genuine news and fabricated content. By combining **Natural Language Processing (NLP)** and **Machine Learning (ML)**, the system establishes a link between raw data and human linguistic patterns.
+
+### 🏗️ The Engineering Process
+I developed a structured pipeline to translate human language into data dimensions that a machine can accurately process:
+
+**Data Strategy:** Utilized datasets to train the system on common misinformation patterns and addressed missing data
+**Preprocessing:** Established a workflow involving rigorous data cleaning and specialized NLP tasks.
+**Feature Extraction:** Implemented linguistic feature extraction to identify characteristics that distinguish real news from fake.
+**Model Selection:** Evaluated several machine learning algorithms to determine the most accurate output:
+    **Random Forest (RF)** & **Decision Trees (DT)** 
+    **Support Vector Machines (SVM)** 
+    **Logistic Regression (LR)** 
+**Deployment:** Integrated the final trained model into a functional **Web App** for real-time user interaction.
+
+### 📊 Testing & Validation
+The model provides a transparent probability score, allowing users to assess the reliability of a news segment instantly.
+
+#### Scenario 1: Validating Authentic Reporting
+* **Objective:** Confirm the model correctly identifies high-integrity, factual journalism.
+* **Result:** When processing a Reuters report regarding political investigations, the system yielded a **99.83% probability of the news being real**.
+* ![Real_News_Detection](./real.png)
+
+#### Scenario 2: Detecting Fabricated Claims
+* **Objective:** Validate the model's ability to catch sensationalized or false narratives.
+* **Result:** When analyzing a fabricated story, the model successfully identified the risk, showing a **96.26% probability of the news being fake**.
+* ![Fake_News_Detection](./fake.png)
+
+**Personal Value Proposition:** While Artifact 1 focused on **Design Thinking**, this project highlights my technical proficiency in **Classification Algorithms** and **Feature Engineering**.
+
+---
+
+## 🛠️ Skills & Technologies
+* **AI/ML:** Supervised Learning, NLP, Feature Engineering, Model Evaluation.
+* **Frameworks/Tools:** Python, Scikit-Learn, TensorFlow, Chatbase, Pandas.
+* **Software Engineering:** Full Stack Development, Scalable Architectures, API Integration.
+
+## 📄 Documentation
+[📄 Download Model Design & Planning Doc](./Doc.docx)
