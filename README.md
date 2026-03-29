@@ -75,6 +75,8 @@ I developed a structured pipeline to translate human language into data dimensio
 **Model Selection:** Evaluated Random Forest (RF), Decision Trees (DT), SVM, and Logistic Regression (LR) to find the highest accuracy.
 **Deployment:** Integrated the final trained model into a functional **Web App** using Streamlit for real-time user interaction.
 
+### Flow Chart
+![Flow_chart](./flowchart.png)
 
 ### 📊 Testing & Validation
 The model provides a transparent probability score, allowing users to assess the reliability of a news segment instantly.
