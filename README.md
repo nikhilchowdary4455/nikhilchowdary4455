@@ -99,5 +99,4 @@ The model provides a transparent probability score, allowing users to assess the
 * **Software Engineering:** Full Stack Development, Scalable Architectures, API Integration.
 
 ## 📄 Documentation
-[📄 Download Report Doc](./Report(1).docx)
-[📄 Download Model Design & Planning Doc](./Doc.docx)
+[📄 Download Report Doc](./Reportartifact2.docx)
