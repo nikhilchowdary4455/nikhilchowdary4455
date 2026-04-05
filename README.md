@@ -120,8 +120,34 @@ I followed a rigorous machine learning workflow to transform raw financial data 
 * **Hyperparameter Tuning**: Utilized **Grid Search** to optimize models, significantly improving performance for algorithms like **Gradient Boosting** and **XGBoost**.
 * **Customer Segmentation**: Employed **K-Means Clustering** to categorize users into three distinct credit risk clusters (Low, Medium, High) based on payment history and socio-economic status.
 
+### Flow Chart
+![Flow_chart](./flowchart3.png)
+
 ### 📊 Model Performance & Validation
 The models were evaluated on their ability to maintain high test accuracy while balancing precision and recall for the minority class.
+**Logistic Regression**
+![Logistic Regression](./logistic regression.png)
+![Logistic Regression After tuning](./logistic regression after tuning.png)
+
+**Decision Tree**
+![Decision Tree](./decision tree.png)
+![Decision Tree After tuning](./decision tree tuning.png)
+
+**Random Forest**
+![Random Forest](./random forest.png)
+![Random Forest After tuning](./randome forest tuning.png)
+
+**Ada Boost**
+![adaboost](./adaboost.png)
+![adaboost After tuning](./adaboost tuning'.png)
+
+**XGBoost**
+![xgboost](./xgboost.png)
+![xgboost After tuning](./xgboost tuning.png)
+
+**Customer Segmenation**
+![customer segmentation](./customer segmentation.png)
+
 
 | Algorithm | Train Accuracy | Test Accuracy |
 | :--- | :---: | :---: |
