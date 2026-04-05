@@ -102,3 +102,43 @@ The model provides a transparent probability score, allowing users to assess the
 
 ## 📄 Documentation
 [📄 Download Report Doc](./Reportartifact2.docx)
+
+## Artifact 3: Financial Risk Forecasting & Customer Intelligence
+**Topic:** Supervised Learning, Ensemble Methods, and Neural Networks
+
+### 📋 Overview
+As financial institutions face increasing volatility, the ability to predict credit defaults is critical for maintaining fiscal stability.This project develops a high-performance pipeline to predict the likelihood of customer defaults using a dataset of **30,000 observations** from the **UCI Machine Learning Repository**.
+
+By integrating **Supervised Learning** for prediction and **Unsupervised Learning** for customer segmentation, this project provides a dual-layer solution for both risk mitigation and business growth.
+
+### 🏗️ The Engineering Process
+I followed a rigorous machine learning workflow to transform raw financial data into actionable insights:
+
+* **Data Strategy & EDA**: Identified a significant **class imbalance** (23,364 non-defaulters vs. 6,636 defaulters) and uncovered key trends, such as university-educated demographics contributing to higher default counts.
+* **Feature Engineering**: Implemented **SMOTE (Synthetic Minority Oversampling Technique)** to balance the training data, ensuring the model effectively learned the characteristics of the minority "defaulter" class.
+* **Advanced Modeling**: Evaluated 10 distinct algorithms, including **Logistic Regression**, **Random Forest**, **AdaBoost**, and **Recurrent Neural Networks (RNN)**.
+* **Hyperparameter Tuning**: Utilized **Grid Search** to optimize models, significantly improving performance for algorithms like **Gradient Boosting** and **XGBoost**.
+* **Customer Segmentation**: Employed **K-Means Clustering** to categorize users into three distinct credit risk clusters (Low, Medium, High) based on payment history and socio-economic status.
+
+### 📊 Model Performance & Validation
+The models were evaluated on their ability to maintain high test accuracy while balancing precision and recall for the minority class.
+
+| Algorithm | Train Accuracy | Test Accuracy |
+| :--- | :---: | :---: |
+| **Decision Tree (Tuned)** | 85% | **82%** |
+| **AdaBoost Classifier** | 87% | **82%** |
+| **RNN (Neural Network)** | 82% | **82%** |
+| **Gradient Boosting** | 88% | **82%** |
+
+**Key Feature Insight**: Feature importance analysis identified **PAY_0** (most recent repayment status) and **LIMIT_BAL** (credit limit) as the most critical predictors of default behavior.
+
+### 🧩 Customer Intelligence Segments
+To add business value, I mapped the K-Means clusters to specific risk profiles:
+* **Cluster 0 (Low Risk)**: Primarily married females with high education levels and a history of on-time payments.
+* **Cluster 2 (High Risk)**: Primarily married males with lower education levels and the highest history of defaulting.
+
+**Personal Value Proposition:** While Artifact 1 focused on **Design Thinking** and Artifact 2 on **NLP Pipelines**, this project highlights my technical mastery of **Ensemble Learning** and my ability to derive **Business Intelligence** from complex, unbalanced numerical datasets.
+
+### 📄 Documentation
+* [**View Presentation Slide Deck**](./602presentation.pptx)
+* [**View Source Jupyter Notebook**](./final_602_project_.ipynb)
