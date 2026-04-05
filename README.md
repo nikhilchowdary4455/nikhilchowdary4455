@@ -126,27 +126,27 @@ I followed a rigorous machine learning workflow to transform raw financial data 
 ### 📊 Model Performance & Validation
 The models were evaluated on their ability to maintain high test accuracy while balancing precision and recall for the minority class.
 **Logistic Regression**
-![Logistic Regression](./logistic regression.png)
-![Logistic Regression After tuning](./logistic regression after tuning.png)
+![Logistic Regression](./logisticregression.png)
+![Logistic Regression After tuning](./logisticregressionaftertuning.png)
 
 **Decision Tree**
-![Decision Tree](./decision tree.png)
-![Decision Tree After tuning](./decision tree tuning.png)
+![Decision Tree](./decisiontree.png)
+![Decision Tree After tuning](./decisiontreetuning.png)
 
 **Random Forest**
 ![Random Forest](./random forest.png)
-![Random Forest After tuning](./randome forest tuning.png)
+![Random Forest After tuning](./randomeforesttuning.png)
 
 **Ada Boost**
 ![adaboost](./adaboost.png)
-![adaboost After tuning](./adaboost tuning'.png)
+![adaboost After tuning](./adaboosttuning'.png)
 
 **XGBoost**
 ![xgboost](./xgboost.png)
 ![xgboost After tuning](./xgboost tuning.png)
 
 **Customer Segmenation**
-![customer segmentation](./customer segmentation.png)
+![customer segmentation](./customersegmentation.png)
 
 
 | Algorithm | Train Accuracy | Test Accuracy |
