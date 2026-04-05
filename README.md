@@ -134,7 +134,7 @@ The models were evaluated on their ability to maintain high test accuracy while 
 ![Decision Tree After tuning](./decisiontreetuning.png)
 
 **Random Forest**
-![Random Forest](./random forest.png)
+![Random Forest](./randomforest.png)
 ![Random Forest After tuning](./randomeforesttuning.png)
 
 **Ada Boost**
