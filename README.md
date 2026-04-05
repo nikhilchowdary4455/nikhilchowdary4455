@@ -139,11 +139,11 @@ The models were evaluated on their ability to maintain high test accuracy while 
 
 **Ada Boost**
 ![adaboost](./adaboost.png)
-![adaboost After tuning](./adaboosttuning'.png)
+![adaboost After tuning](./adaboosttuning.png)
 
 **XGBoost**
 ![xgboost](./xgboost.png)
-![xgboost After tuning](./xgboost tuning.png)
+![xgboost After tuning](./xgboosttuning.png)
 
 
 
@@ -173,4 +173,4 @@ To add business value, I mapped the K-Means clusters to specific risk profiles:
 
 ### 📄 Documentation
 * [**View Presentation Slide Deck**](./customersegmentation.pptx)
-* [**View Source Jupyter Notebook**](./final_602_project_.ipynb)
+* [**View Source Jupyter Notebook**](./creditproj.ipynb)
