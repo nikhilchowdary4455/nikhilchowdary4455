@@ -145,8 +145,6 @@ The models were evaluated on their ability to maintain high test accuracy while 
 ![xgboost](./xgboost.png)
 ![xgboost After tuning](./xgboost tuning.png)
 
-**Customer Segmenation**
-![customer segmentation](./customersegmentation.png)
 
 
 | Algorithm | Train Accuracy | Test Accuracy |
@@ -155,6 +153,14 @@ The models were evaluated on their ability to maintain high test accuracy while 
 | **AdaBoost Classifier** | 87% | **82%** |
 | **RNN (Neural Network)** | 82% | **82%** |
 | **Gradient Boosting** | 88% | **82%** |
+
+### 🧩 Customer Intelligence & K-Means Clustering
+To provide actionable business value, I implemented **K-Means Clustering** to segment the 30,000 customers into risk-based profiles. This shifted the project from a binary prediction tool into a comprehensive strategic dashboard.
+
+![Customer Segmentation Results](./customersegmentation.png)
+
+* **High-Value/Low-Risk**: Identified via Cluster 0, primarily highly-educated individuals with flawless payment histories.
+* **Actionable High-Risk**: Identified via Cluster 2, allowing for targeted intervention strategies before defaults occur.
 
 **Key Feature Insight**: Feature importance analysis identified **PAY_0** (most recent repayment status) and **LIMIT_BAL** (credit limit) as the most critical predictors of default behavior.
 
@@ -166,5 +172,5 @@ To add business value, I mapped the K-Means clusters to specific risk profiles:
 **Personal Value Proposition:** While Artifact 1 focused on **Design Thinking** and Artifact 2 on **NLP Pipelines**, this project highlights my technical mastery of **Ensemble Learning** and my ability to derive **Business Intelligence** from complex, unbalanced numerical datasets.
 
 ### 📄 Documentation
-* [**View Presentation Slide Deck**](./602presentation.pptx)
+* [**View Presentation Slide Deck**](./customersegmentation.pptx)
 * [**View Source Jupyter Notebook**](./final_602_project_.ipynb)
