@@ -200,9 +200,9 @@ To ensure the RAG system provides grounded and relevant information, I tested it
 
 ### Scenario 2: Scope Enforcement
 **Objective:** Validate that the system maintains its role as a healthcare-specific assistant.
-**Result:** When prompted with a non-healthcare query (e.g., "How do I change a tire?"), the system successfully triggered its guardrails and politely declined to answer.
+**Result:** When prompted with a non-healthcare query (e.g., "who won world cup"), the system successfully triggered its guardrails and politely declined to answer.
 
-![Guardrail Tire Test](./gaurdrail.png)
+![Guardrail Tire Test](./test1.png)
 
 ---
 
@@ -210,7 +210,7 @@ To ensure the RAG system provides grounded and relevant information, I tested it
 **Objective:** Provide an accessible interface for stakeholders to query the knowledge base.
 **Result:** Deployed a functional **Gradio** chat interface that allows users to interact with the "Review Helper Bot" in real-time.
 
-![Gradio Interface Test 1](./test1.png)
+![Gradio Interface Test 1](./gaurdrail.png)
 ![Gradio Interface Test 2](./test2.png)
 ![Gradio Interface Test 3](./test3.png)
 
