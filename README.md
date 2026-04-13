@@ -174,3 +174,54 @@ To add business value, I mapped the K-Means clusters to specific risk profiles:
 ### 📄 Documentation
 * [**View Presentation Slide Deck**](./customersegmentation.pptx)
 * [**View Source Jupyter Notebook**](./creditproj.ipynb)
+
+## Artifact 4: Enterprise RAG Assistant (Advanced MedBuddy Evolution)
+**Topic:** Generative AI Orchestration & Vector Search Architectures
+
+### 📋 Overview
+A technical evolution of Artifact 1, this project uses **Retrieval-Augmented Generation (RAG)** to connect a **Gemini 2.5 Flash** model to a dedicated external knowledge base of healthcare reviews.
+
+### 🏗️ The Engineering Process
+* **Knowledge Base Engineering:** Processed unstructured data using `CSVLoader` and implemented a batch processing loop for embedding generation to respect API rate limits.
+* **Vector Search:** Utilized **Google Generative AI Embeddings** (`text-embedding-004`) indexed in a persistent **ChromaDB** vector store.
+* **Orchestration:** Developed a pipeline using **LangChain Expression Language (LCEL)** to link the retriever, prompt template, and chat model.
+* **Deployment:** Integrated a user-friendly interface using **Gradio** for real-time interaction.
+
+## 📊 Testing & Validation Results
+To ensure the RAG system provides grounded and relevant information, I tested its retrieval and logic capabilities across various hospital review scenarios.
+
+### Scenario 1: Targeted Information Retrieval
+**Objective:** Confirm the system can extract specific insights from thousands of raw reviews.
+**Result:** When asked about staff communication, the system performed a similarity search, retrieved the top 10 relevant reviews, and synthesized an accurate summary of patient feedback.
+
+![Staff Communication Test](./staff_test.png)
+
+---
+
+### Scenario 2: Scope Enforcement
+**Objective:** Validate that the system maintains its role as a healthcare-specific assistant.
+**Result:** When prompted with a non-healthcare query (e.g., "How do I change a tire?"), the system successfully triggered its guardrails and politely declined to answer.
+
+![Guardrail Tire Test](./gaurdrail.png)
+
+---
+
+### Scenario 3: Real-Time UI Interaction
+**Objective:** Provide an accessible interface for stakeholders to query the knowledge base.
+**Result:** Deployed a functional **Gradio** chat interface that allows users to interact with the "Review Helper Bot" in real-time.
+
+![Gradio Interface Test 1](./test1.png)
+![Gradio Interface Test 2](./test2.png)
+![Gradio Interface Test 3](./test3.png)
+
+**Personal Value Proposition:** Demonstrates mastery of **Advanced LLM Orchestration** and the ability to solve challenges like context window limitations and factual inaccuracy.
+
+
+
+## 🛠️ Skills & Technologies
+* **AI/ML:** RAG Architectures, Vector Databases, Ensemble Methods, NLP, Supervised/Unsupervised Learning.
+* **Frameworks/Tools:** Python, LangChain, ChromaDB, Scikit-Learn, TensorFlow, Gradio, Pandas.
+* **Cloud & Infrastructure:** AWS (SageMaker), Azure (Databricks), Terraform, Containerization.
+
+## 📄 Documentation Links
+* [Artifact 4: RAG Implementation Notebook](./Chatbot_with_RAG.ipynb)
