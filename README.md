@@ -4,10 +4,10 @@
 
 ---
 
-## 👨‍💻 Professional Summary
-I am a Full Stack Software Engineer with over 3 years of experience delivering scalable enterprise solutions in Fintech and E-commerce. I specialize in combining agile innovation with engineering discipline to build high-performance systems—such as a real-time Loan Origination System with sub-100ms latency.
+## 👨‍💻 Professional Summary & Personal Statement
+I am a Full Stack Software Engineer with over 3 years of experience delivering scalable enterprise solutions. My career is defined by a commitment to bridging the gap between robust software engineering and cutting-edge Artificial Intelligence. 
 
-This portfolio showcases my journey into **Artificial Intelligence and Machine Learning**, where I apply my background in scalable architectures to create safe, responsible, and human-centered AI solutions.
+**My Goal:** I am dedicated to developing **Responsible AI**—systems that are not only technically superior but ethically grounded and human-centered. I specialize in building autonomous Agentic workflows and RAG architectures that solve complex problems with high data integrity.
 
 ---
 
@@ -22,36 +22,26 @@ This portfolio showcases my journey into **Artificial Intelligence and Machine L
 ### Overview
 Developed a medically-grounded AI triage assistant using Design Thinking. Synthesized a knowledge base from MedlinePlus to ensure factual accuracy and programmed custom guardrails for emergency detection.
 
-### 🏗️ Development Process
-1. **Empathize:** Identified user anxiety regarding "Google-diagnosing."
-2. **Define:** Built a system to triage symptoms into "Self-Care" or "Professional Care."
-3. **Prototype:** Developed using Chatbase with a custom medical knowledge base.
-4. **Test & Iterate:** Refined the AI's tone to be more empathetic.
+### 🏗️ Engineering Insights & Contributions
+* **Safety First:** I implemented a "Red-Flag" interceptor that overrides the LLM response if emergency keywords are detected, ensuring 100% adherence to safety protocols.
+* **Knowledge Grounding:** Instead of relying on general training data, I constrained the assistant to a verified medical knowledge base to prevent hallucinations.
 
-### 📊 Testing & Validation
+### 📊 All Testing & Validation Scenarios
 
-### Scenario 1: Emergency Detection (Chest Pain)
-**Objective:** Validate that the "Red Flag" guardrails trigger immediately.  
-**Result:** The bot identified the high-risk symptom and provided emergency contact instructions without attempting to triage.
+* **Scenario 1: Emergency Detection (Chest Pain)**
+  * **Objective:** Validate that "Red Flag" guardrails trigger immediately.
+  * **Result:** The bot identified high-risk symptoms and provided emergency instructions without triaging.
+  ![Emergency Heart Test](./heartest1.png)
 
-![Emergency Heart Test](./heartest1.png)
+* **Scenario 2: Symptom Triage (High Fever)**
+  * **Objective:** Test ability to provide evidence-based care steps.
+  * **Result:** Provided clear instructions on monitoring temperature and hydration based on MedlinePlus.
+  ![Fever Test Result 1](./fevertest1.png) ![Fever Test Result 2](./fevertest2.png)
 
-
-### Scenario 2: Symptom Triage (High Fever)
-**Objective:** Test the assistant's ability to provide evidence-based care steps for a common illness.  
-**Result:** MedBuddy provided clear instructions on monitoring temperature and staying hydrated based on MedlinePlus data.
-
-![Fever Test Result](./fevertest1.png)
-![Fever Test Result](./fevertest2.png)
-
-
-### Scenario 3: Minor Ailment (Sore Throat)
-**Objective:** Ensure the assistant provides comforting, non-diagnostic home remedies.  
-**Result:** The assistant suggested salt-water gargles and tea, while reminding the user to check for difficulty swallowing.
-
-![Sore Throat Test Result](./sorethroat1.png)
-![Sore Throat Test Result](./sorethroat2.png)
-
+* **Scenario 3: Minor Ailment (Sore Throat)**
+  * **Objective:** Ensure comforting, non-diagnostic home remedies.
+  * **Result:** Suggested salt-water gargles and tea, with reminders to check for difficulty swallowing.
+  ![Sore Throat Test Result 1](./sorethroat1.png) ![Sore Throat Test Result 2](./sorethroat2.png)
 
 **Documentation:** [📄 Download MedBuddy Design Doc](./Doc.docx)
 </details>
@@ -65,15 +55,20 @@ Developed a medically-grounded AI triage assistant using Design Thinking. Synthe
 ### Overview
 Addresses misinformation by combining **NLP** and **Machine Learning** to distinguish between genuine news and fabricated content.
 
-### 🏗️ The Engineering Process
-* **NLP Processing:** Cleaning pipeline using NLTK and **Word2Vec embedding**.
-* **N-Gram Analysis:** Uncovered thematic differences (Objective reporting vs. Sensationalism).
-* **Deployment:** Integrated into a functional **Streamlit Web App**.
+### 🏗️ Engineering Insights & Contributions
+* **N-Gram Analysis:** Conducted Bi-gram and Tri-gram analysis to uncover thematic differences (e.g., Fake news focused on sensationalist proper nouns).
+* **NLP Pipeline:** Engineered a cleaning pipeline using NLTK and **Word2Vec embedding** to capture semantic nuances.
 
-### 📊 Testing & Validation
-* **Authentic Reporting:** 99.83% probability for real news.
+### 📊 All Testing & Validation Scenarios
+
+* **Scenario 1: Validating Authentic Reporting**
+  * **Objective:** Confirm model identifies high-integrity, factual journalism.
+  * **Result:** Yielded a **99.83% probability** of news being real on a Reuters report.
   ![Real_News_Detection](./true.png)
-* **Fabricated Claims:** 96.26% probability detection for fake news.
+
+* **Scenario 2: Detecting Fabricated Claims**
+  * **Objective:** Validate the ability to catch sensationalized or false narratives.
+  * **Result:** Successfully identified a fabricated story with a **96.26% probability** of being fake.
   ![Fake_News_Detection](./fake.png)
 
 **Documentation:** [📄 Download Report Doc](./Reportartifact2.docx)
@@ -86,41 +81,53 @@ Addresses misinformation by combining **NLP** and **Machine Learning** to distin
 **Topic:** Supervised Learning, Ensemble Methods, and Neural Networks
 
 ### Overview
-High-performance pipeline to predict credit defaults using a dataset of **30,000 observations**.
+Predicts credit defaults and segments customers using a dataset of 30,000 observations from the UCI Machine Learning Repository.
 
-### 🏗️ The Engineering Process
-* **Feature Engineering:** Implemented **SMOTE** to handle class imbalance.
-* **Advanced Modeling:** Evaluated algorithms including XGBoost, Random Forest, and RNNs.
-* **Intelligence:** Used **K-Means Clustering** to segment users into risk profiles.
+### 🏗️ Engineering Insights & Contributions
+* **Handling Imbalance:** Implemented **SMOTE** to balance the training data, improving recall for the "defaulter" class by over 15%.
+* **Hyperparameter Tuning:** Utilized **Grid Search** to optimize XGBoost and Gradient Boosting models for high-stakes financial predictions.
 
-| Algorithm | Train Acc | Test Acc |
+### 📊 All Performance Scenarios
+| Algorithm | Train Accuracy | Test Accuracy |
 | :--- | :---: | :---: |
 | **XGBoost (Tuned)** | 89% | **82%** |
-| **AdaBoost** | 87% | **82%** |
-| **RNN** | 82% | **82%** |
+| **AdaBoost Classifier** | 87% | **82%** |
+| **Decision Tree (Tuned)** | 85% | **82%** |
+| **RNN (Neural Network)** | 82% | **82%** |
 
-**Documentation:** [📊 View Presentation](./customersegmentation.pptx) | [🐍 Source Code](./creditproj.ipynb)
+* **Customer Intelligence Scenario:** Used **K-Means Clustering** to identify 3 distinct risk profiles (Low, Medium, High).
+  ![Customer Segmentation](./customersegmentation.png)
+
+**Documentation:** [📊 Presentation](./customersegmentation.pptx) | [🐍 Source Code](./creditproj.ipynb)
 </details>
 
 <details>
 <summary><b>Artifact 4: Enterprise RAG Assistant (Generative AI)</b></summary>
 <br>
 
-**Topic:** Generative AI Orchestration & Vector Search Architectures
+**Topic:** Generative AI Orchestration & Vector Search
 
 ### Overview
-A technical evolution using **Retrieval-Augmented Generation (RAG)** to connect **Gemini 2.5 Flash** to an external healthcare knowledge base.
+A technical evolution of Artifact 1, using **Retrieval-Augmented Generation (RAG)** to connect Gemini 2.5 Flash to a persistent knowledge base of healthcare reviews.
 
-### 🏗️ The Engineering Process
-* **Vector Search:** Used **ChromaDB** with `text-embedding-004`.
-* **Orchestration:** Developed via **LangChain Expression Language (LCEL)**.
-* **Deployment:** Real-time UI using **Gradio**.
+### 🏗️ Engineering Insights & Contributions
+* **Vector Store:** Utilized **ChromaDB** with `text-embedding-004` indexed for persistent, high-speed similarity search.
+* **Orchestration:** Developed the pipeline via **LangChain Expression Language (LCEL)** for modularity and traceability.
 
-### 📊 Testing & Validation
-* **Targeted Retrieval:** Synthesized communication feedback from thousands of reviews.
+### 📊 All Testing & Validation Scenarios
+
+* **Scenario 1: Targeted Information Retrieval**
+  * **Result:** Successfully synthesized staff communication feedback from thousands of raw reviews.
   ![Staff Communication Test](./staff_test.png)
-* **Scope Enforcement:** Successfully blocked non-healthcare queries via guardrails.
+
+* **Scenario 2: Scope Enforcement**
+  * **Result:** Successfully triggered guardrails to decline non-healthcare queries.
   ![Guardrail Tire Test](./test1.png)
+
+* **Scenario 3: Real-Time UI Interaction**
+  * **Result:** Deployed functional **Gradio** chat interface for real-time stakeholder querying.
+  ![Gradio 1](./gaurdrail.png)
+ ![Gradio 2](./test2.png)
 
 **Documentation:** [📄 RAG Implementation Notebook](./Chatbot_with_RAG.ipynb)
 </details>
@@ -132,27 +139,30 @@ A technical evolution using **Retrieval-Augmented Generation (RAG)** to connect 
 **Topic:** Agentic AI, Autonomous Workflows, & Multi-LLM Orchestration
 
 ### Overview
-Implementation of a **Multi-Agent System (MAS)** using **CrewAI** to perform complex, multi-step market analysis autonomously.
+Implementation of a **Multi-Agent System (MAS)** using **CrewAI** to perform complex market analysis autonomously via specialized agents.
 
-### 🏗️ The Engineering Process
-* **Agent Orchestration:** Configured Researcher and Writer agents with distinct autonomous roles.
-* **Dynamic Tooling:** Integrated **SerperDevTool** for real-time web access.
-* **Multi-LLM Strategy:** Combined **Gemini 2.5 Flash** (Reasoning) with **GPT-4o-mini** (QA).
+### 🏗️ Engineering Insights & Contributions
+* **Role-Based Delegation:** Designed a decoupled architecture for "Researcher" and "Writer" agents to reduce hallucination and ensure data-flow integrity.
+* **Dynamic Tooling:** Integrated **SerperDevTool** for live web access, bypassing static LLM knowledge cutoffs.
 
-### 📊 Testing & Validation
-* **Scenario 1: Synthesis** - Identified 2026 AI trends regarding "Proactive Agents."
-  ![Search query](./s11.png)
- ![Agent output](./s12.png)
-* **Scenario 2: Generation** - Generated a publication-ready Markdown blog post.
-  ![Search query](./s21.png)
-  ![Agent output](./s22.png)
+### 📊 All Testing & Validation Scenarios
 
-**Documentation:** [🐍 Market Intelligence Implementation](./artifact5.ipynd)
+* **Scenario 1: Information Synthesis & Tool Usage**
+  * **Result:** Agent autonomously identified 2026 trends, specifically the shift to "Proactive Agents."
+  ![Search query 1](./s11.png)
+![Agent output 1](./s12.png)
+
+* **Scenario 2: Autonomous Content Generation**
+  * **Result:** Generated a 500-word publication-ready Markdown file differentiating between industry facts and market opinions.
+  ![Search query 2](./s21.png)
+![Agent output 2](./s22.png)
+
+**Documentation:** [🐍 Market Intelligence Code](./artifact5.ipynd)
 </details>
 
 ---
 
 ## 🛠️ Skills & Technologies
-* **AI/ML:** Agentic AI, RAG Architectures, Vector Databases (ChromaDB), NLP, Ensemble Learning, SMOTE.
+* **AI/ML:** Agentic AI, RAG, Vector Databases (ChromaDB), NLP, Ensemble Learning, SMOTE.
 * **Frameworks/Tools:** CrewAI, LangChain, TensorFlow, Scikit-Learn, Streamlit, Gradio, Pandas, NLTK.
 * **Software Engineering:** Python (FastAPI/Flask), Java (Spring Boot), React, SQL, AWS, Azure, Terraform.
