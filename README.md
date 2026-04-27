@@ -29,12 +29,29 @@ Developed a medically-grounded AI triage assistant using Design Thinking. Synthe
 4. **Test & Iterate:** Refined the AI's tone to be more empathetic.
 
 ### 📊 Testing & Validation
-* **Scenario 1: Emergency Detection** - Identified high-risk symptoms (Chest Pain) and provided emergency protocols.
-  ![Emergency Heart Test](./heartest1.png)
-* **Scenario 2: Symptom Triage** - Provided evidence-based steps for high fever.
-  ![Fever Test Result](./fevertest1.png)
-* **Scenario 3: Minor Ailment** - Suggested home remedies for a sore throat.
-  ![Sore Throat Test Result](./sorethroat1.png)
+
+### Scenario 1: Emergency Detection (Chest Pain)
+**Objective:** Validate that the "Red Flag" guardrails trigger immediately.  
+**Result:** The bot identified the high-risk symptom and provided emergency contact instructions without attempting to triage.
+
+![Emergency Heart Test](./heartest1.png)
+
+
+### Scenario 2: Symptom Triage (High Fever)
+**Objective:** Test the assistant's ability to provide evidence-based care steps for a common illness.  
+**Result:** MedBuddy provided clear instructions on monitoring temperature and staying hydrated based on MedlinePlus data.
+
+![Fever Test Result](./fevertest1.png)
+![Fever Test Result](./fevertest2.png)
+
+
+### Scenario 3: Minor Ailment (Sore Throat)
+**Objective:** Ensure the assistant provides comforting, non-diagnostic home remedies.  
+**Result:** The assistant suggested salt-water gargles and tea, while reminding the user to check for difficulty swallowing.
+
+![Sore Throat Test Result](./sorethroat1.png)
+![Sore Throat Test Result](./sorethroat2.png)
+
 
 **Documentation:** [📄 Download MedBuddy Design Doc](./Doc.docx)
 </details>
@@ -124,9 +141,11 @@ Implementation of a **Multi-Agent System (MAS)** using **CrewAI** to perform com
 
 ### 📊 Testing & Validation
 * **Scenario 1: Synthesis** - Identified 2026 AI trends regarding "Proactive Agents."
-  ![Search query](./s11.png) ![Agent output](./s12.png)
+  ![Search query](./s11.png)
+ ![Agent output](./s12.png)
 * **Scenario 2: Generation** - Generated a publication-ready Markdown blog post.
-  ![Search query](./s21.png) ![Agent output](./s22.png)
+  ![Search query](./s21.png)
+  ![Agent output](./s22.png)
 
 **Documentation:** [🐍 Market Intelligence Implementation](./artifact5.ipynd)
 </details>
