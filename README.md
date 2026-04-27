@@ -225,3 +225,52 @@ To ensure the RAG system provides grounded and relevant information, I tested it
 
 ## 📄 Documentation Links
 * [Artifact 4: RAG Implementation Notebook](./Chatbot_with_RAG.ipynb)
+
+  ## Artifact 5: Multi-Agent Market Intelligence System
+**Topic:** Agentic AI, Autonomous Workflows, & Multi-LLM Orchestration
+
+### 📋 Overview
+As AI shifts from passive tools to proactive assistants, this project demonstrates the implementation of a **Multi-Agent System (MAS)** using the **CrewAI** framework. Unlike standard RAG systems, this architecture utilizes autonomous agents with distinct roles (Researcher and Writer) to perform complex, multi-step market analysis without human intervention.
+
+### 🏗️ The Engineering Process
+I designed a decoupled architecture where specialized agents collaborate through a sequential process:
+
+* **Agent Orchestration:** Configured a "Market Researcher" agent with web-access tools and a "Content Writer" agent to synthesize findings.
+* **Dynamic Tooling:** Integrated **SerperDevTool** (Google Search API) to allow the Researcher to fetch real-time industry data, bypassing the knowledge cutoff of static LLMs.
+* **Multi-LLM Integration:** Leveraged **Gemini 2.5 Flash** for high-speed reasoning and **GPT-4o-mini** for cost-effective quality assurance, demonstrating the ability to manage a heterogeneous model environment.
+* **Workflow Logic:** Implemented `Process.sequential` to ensure a strict data-flow pipeline: Research -> Synthesis -> Markdown Output.
+* **Persistence:** Developed a Python-based post-processing script to automatically export agent outcomes into structured `.md` artifacts for professional distribution.
+
+### 🔄 The Agentic Workflow
+
+1.  **Researcher Agent:** Queries the web, filters for high-authority sources, and produces a raw technical report.
+2.  **Writer Agent:** Reviews the report, adapts the tone for a non-technical audience, and structures the content for SEO.
+3.  **The Crew:** Manages the handoffs, state, and rate-limiting (max RPM) between agents.
+
+### 📊 Testing & Validation Results
+The system was tested by tasking it with analyzing "The Future of AI Content Creation."
+
+#### Scenario 1: Information Synthesis & Tool Usage
+* **Objective:** Validate that the Researcher can successfully navigate the live web and provide cited facts.
+* **Result:** The agent autonomously identified key 2025-2026 trends, specifically highlighting the shift from "Chatbots" to "Proactive Agents" and the rise of multimodal systems.
+
+![Search query](./s11.png)
+![Agent output](./s12.png)
+
+#### Scenario 2: Autonomous Content Generation
+* **Objective:** Ensure the Writer agent can transform raw research into a publication-ready blog post.
+* **Result:** The system generated a 500-word Markdown file that successfully differentiated between objective industry facts and subjective market opinions.
+
+![Search query](./s21.png)
+![Agent output](./s22.png)
+
+**Personal Value Proposition:** This project marks my transition into **Agentic AI Engineering**. It demonstrates that I can build systems that don't just "answer" but "act"—automating professional workflows through role-based collaboration and real-time tool integration.
+
+### 🛠️ Skills & Technologies
+* **Agentic Frameworks:** CrewAI, AutoGen.
+* **LLMs:** Gemini 2.5 Flash, GPT-4o-mini.
+* **Tools & APIs:** Serper.dev (Search), ScrapeWebsiteTool, LangChain.
+* **Development:** Python, Environment Variable Management, Markdown Automation.
+
+### 📄 Documentation
+* [**Artifact 5: Market Intelligence Implementation**](./artifact5.ipynd)
