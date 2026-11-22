@@ -172,7 +172,7 @@ To add business value, I mapped the K-Means clusters to specific risk profiles:
 **Personal Value Proposition:** While Artifact 1 focused on **Design Thinking** and Artifact 2 on **NLP Pipelines**, this project highlights my technical mastery of **Ensemble Learning** and my ability to derive **Business Intelligence** from complex, unbalanced numerical datasets.
 
 ### 📄 Documentation
-* [**View Presentation Slide Deck**](./customersegmentation.pptx)
+* [**View Presentation Slide Deck**](./Creditcardfraudproject.pptx)
 * [**View Source Jupyter Notebook**](./creditproj.ipynb)
 
 ## Artifact 4: Enterprise RAG Assistant (Advanced MedBuddy Evolution)
@@ -273,6 +273,47 @@ The system was tested by tasking it with analyzing "The Future of AI Content Cre
 * **Development:** Python, Environment Variable Management, Markdown Automation.
 
 ### 📄 Documentation
-* [**Artifact 5: Market Intelligence Implementation**](./artifact5.ipynd)
+* [**Artifact 5: Market Intelligence Implementation**](./artifact5.ipynb)
 
+<a id="artifact-6"></a>
 
+## Artifact 6: Explainable AI (XAI): Trust, Validation & Performance Metrics
+
+**Topic:** Explainability, Model Validation, and Performance Metrics in Generative AI
+
+### 📋 Overview
+This artifact is a visual presentation that explains **Explainable AI (XAI)** to a non-technical audience. It covers why transparency in AI matters, the main challenges in explaining large language models such as GPT, Claude, Gemini and LLaMA, how validation and performance metrics build trust, and what industry leaders (OpenAI, Meta, Google DeepMind, Anthropic) are doing about it. Unlike my earlier artifacts, which focused on building models, this one demonstrates my ability to **communicate responsible-AI concepts clearly** to non-technical stakeholders.
+
+### 📄 Documentation (open directly)
+* [**Open the Explainable AI page**](https://nikhilchowdary4455.github.io/nikhilchowdary4455/xai/)
+* [**View the Presentation (PDF)**](./xai/Explainable_AI_Presentation.pdf)
+* [**Download the Presentation (PowerPoint)**](./xai/Explainable_AI_Presentation.pptx)
+* [**View the Explanatory Document (PDF)**](./xai/Explainable_AI_Explanatory_Document.pdf)
+* [**Download the Explanatory Document (Word)**](./xai/Explainable_AI_Explanatory_Document.docx)
+
+### 🖼️ The Presentation
+![Slide 1: Title](./xai/slide-1.png)
+![Slide 2: What is explainable AI?](./xai/slide-2.png)
+![Slide 3: Why transparency is critical](./xai/slide-3.png)
+![Slide 4: Challenges in explainability](./xai/slide-4.png)
+![Slide 5: How validation builds trust](./xai/slide-5.png)
+![Slide 6: Performance metrics](./xai/slide-6.png)
+![Slide 7: What industry leaders are doing](./xai/slide-7.png)
+![Slide 8: Takeaway](./xai/slide-8.png)
+
+### 📝 Explanatory Summary
+This presentation introduces explainable AI (XAI), which means making an AI model's decisions clear enough for people to understand. Transparency matters most in fields such as healthcare, finance and law, where a decision needs a reason that people can review and challenge. The slides cover four main challenges: models with billions of parameters are too complex to trace by hand, their decision-making is often opaque, the explanations they give may not match what actually happened inside the model, and regulations such as the EU AI Act differ by region. The slides also show how industry leaders are responding, including OpenAI's work on sparse autoencoders, Meta's Captum library, Google DeepMind's Gemma Scope and Anthropic's interpretability research.
+
+Trust in AI comes from three things working together. Explainability lets people see why a model produced an answer. Validation tests the model on data it has never seen and checks that its reasoning matches its answers. Performance metrics, such as accuracy, hallucination rate, fairness, robustness and faithfulness, turn that testing into measurable evidence. Without explanation, a good score cannot be questioned, and without validation and metrics, an explanation cannot be shown to be reliable. Real cases covered in the explanatory document, including Amazon's experimental hiring tool and ChatGPT's miscount of the letter "r" in "strawberry", show what happens when one of these pieces is missing. I designed the slides in plain black and white, with one idea per slide and short text, so that a non-technical audience can follow the argument quickly, and I grouped the content into the same order a newcomer would ask questions: what XAI is, why it matters, what makes it hard, how we check a model, and what industry is doing about it.
+
+The full explanatory document also covers the design choices, plain-language explanations of validation and performance metrics, two real-world case studies, a reflection on my learning, and sources.
+
+### 🌍 Real-World Examples
+* **Amazon's AI hiring tool:** a resume-screening model learned bias against women from historical, mostly male resumes. The problem was only found after specialists studied its results, which shows why explainability and fairness testing matter.
+* **ChatGPT and "strawberry":** the model said there are two "r" letters in "strawberry" (there are three) and often stood by the wrong answer. Models read text as tokens rather than letters, and a confident wrong answer with no visible reasoning is exactly what makes AI hard to trust.
+
+**Personal Value Proposition:** This project shows that I can explain complex, responsible-AI concepts (explainability, validation and performance metrics) in a clear and professional way, and connect them to real-world cases.
+
+### 🛠️ Skills & Technologies
+* **AI/ML:** Explainable AI, Model Validation, Performance Metrics, Responsible AI.
+* **Communication:** Data storytelling, visual design for non-technical audiences, technical writing.
